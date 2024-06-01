@@ -163,21 +163,17 @@ public class Board extends JFrame{
     }
 
     public void checkColumn(){
-        if (game.linedHorizontal() != 0 || game.linedVertical() != 0){
+        if (game.linedHorizontal() != 0 || game.linedVertical() != 0 || game.linedDiagonal() != 0){
             disableAllButton();
             setLabel("Player "+player+" Wins!");
         }
     }
 
     public void gameOver(){
-        if (isAllFilled() && game.linedHorizontal() == 0 || isAllFilled() && game.linedVertical() == 0){
+        if (isAllFilled() && game.linedHorizontal() == 0 || isAllFilled() && game.linedVertical() == 0 || isAllFilled() && game.linedDiagonal() == 0){
             disableAllButton();
             setLabel("Tie!");
         }
-    }
-
-    public void checkAllFilledWinner(){
-
     }
 
     public String setButton(){

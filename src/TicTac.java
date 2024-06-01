@@ -68,6 +68,29 @@ public class TicTac {
         return output;
     }
 
+    public int linedDiagonal(){
+        box = new int[9];
+        Node temp = head;
+        output = 0;
+        for (int i=0;i<MAX_SIZE;i++){
+            box[i] = temp.value;
+            temp = temp.next;
+        }
+        for (int i = 0;i<MAX_SIZE;i+=4){
+            if (box[i] == box[i+4] && box[i+4] == box[i+8] && box[i] != 0){
+                output = box[i];
+                break;
+            }
+        }
+        for (int i = 2;i<MAX_SIZE;i+=2){
+            if (box[i] == box[i+2] && box[i+2] == box[i+4] && box[i] != 0){
+                output = box[i];
+                break;
+            }
+        }
+        return output;
+    }
+
     public void clear(){
         head = null;
     }
