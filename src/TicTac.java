@@ -1,14 +1,12 @@
 public class TicTac {
     Node head;
     int[] box;
-    int size;
     int output;
     private final static int MAX_SIZE = 9;
     private final static  int row = 3;
     private final static int column = 3;
     public TicTac(){
         this.head = null;
-        this.size = MAX_SIZE;
     }
 
     public void insert(int val){
