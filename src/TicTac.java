@@ -76,17 +76,13 @@ public class TicTac {
             box[i] = temp.value;
             temp = temp.next;
         }
-        for (int i = 0;i<MAX_SIZE;i+=4){
-            if (box[i] == box[i+4] && box[i+4] == box[i+8] && box[i] != 0){
-                output = box[i];
-                break;
-            }
+        int i=0;
+        if (box[i] == box[i+4] && box[i+4] == box[i+8] && box[i] != 0){
+            output = box[i];
         }
-        for (int i = 2;i<MAX_SIZE;i+=2){
-            if (box[i] == box[i+2] && box[i+2] == box[i+4] && box[i] != 0){
-                output = box[i];
-                break;
-            }
+        i=2;
+        if (box[i] == box[i+2] && box[i+2] == box[i+4] && box[i] != 0){
+            output = box[i];
         }
         return output;
     }
