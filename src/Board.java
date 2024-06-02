@@ -169,9 +169,9 @@ public class Board extends JFrame{
     }
 
     public void gameOver(){
-        if (isAllFilled() && game.linedHorizontal() == 0 || isAllFilled() && game.linedVertical() == 0 || isAllFilled() && game.linedDiagonal() == 0){
+        if (isAllFilled() && game.linedHorizontal() == 0 && game.linedVertical() == 0 && game.linedDiagonal() == 0){
             disableAllButton();
-            setLabel("Tie!");
+            JOptionPane.showMessageDialog(null,"Tie!");
         }
     }
 
