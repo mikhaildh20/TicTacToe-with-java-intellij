@@ -153,7 +153,6 @@ public class Board extends JFrame{
                 filled=0;
                 clearButton();
                 clearValue();
-                WinnerLabel.setText("Tic Tac Toe");
                 player = 1;
                 playerTurn.setText(String.valueOf(player));
                 enableAllButton();
@@ -165,7 +164,7 @@ public class Board extends JFrame{
     public void checkColumn(){
         if (game.linedHorizontal() != 0 || game.linedVertical() != 0 || game.linedDiagonal() != 0){
             disableAllButton();
-            setLabel("Player "+player+" Wins!");
+            JOptionPane.showMessageDialog(null,"Player "+player+" Wins!");
         }
     }
 
