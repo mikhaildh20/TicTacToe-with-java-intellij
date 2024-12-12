@@ -33,4 +33,4 @@
 </ul>
 
 <h2>Contact</h2>
-<p>If you have any questions or need help with the project, feel free to contact me at <a href="mailto:mikhaildaffa7@gmail.com">mikhaildaffa7@gmail.com</a>.</p>
+<p>If you have any questions or need help with the project, feel free to contact me at <a href="mailto:mikhaildaffa7@gmail.com">mikhaildaffa7@gmail.com</a></p>
